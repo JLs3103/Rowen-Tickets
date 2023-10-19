@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: #fff;
+}
+.header {
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.header-logo {
+    float: left;
+    cursor: pointer;
+    position: relative;
+    bottom: 4px;
+    color: #fff;
+}
+
+.header-list {
+    text-align: center; 
+    position: relative;
+    top: 4px;
+}
+
+.header-list button {
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+/* Gaya search bar container */
+.header-search {
+    float: right;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    position: relative;
+    bottom: 32px;
+}
+  
+/* Gaya input pencarian */
+.header-search input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-image: url('Seacrh.png'); /* URL gambar ikon pencarian */
+  background-repeat: no-repeat;
+  background-position: right center; /* Letakkan gambar di sebelah kanan tengah input */
+  background-size: 20px 20px; /* Ukuran gambar ikon pencarian */
+}
+
+/* Gaya tombol pencarian */
+.header-search button {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-search input[type="text"]:focus {
+  width: 300px; /* Lebar pencarian saat dalam mode fokus */
+}
+
+.main-ads img {
+    height: 600px;
+    padding: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
