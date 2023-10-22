@@ -1,0 +1,358 @@
+*, html, body{
+    margin:0;
+    padding:0;
+}
+
+.fContainer{
+    width:100%;
+    height:100vh;
+    background-image:url(netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px ;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper{
+    width:150px;
+    height:419px;
+    border: solid 1px transparent;
+    background-color: rgba(255, 0, 0, 0.705);
+    font-size: 20px;
+    margin-left:350px;
+    border-radius: 5px;
+}
+
+.wrapper li{
+    list-style-type: none;
+    font-family: sans-serif;
+    padding:10px 10px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+.wrapper a{
+    font-size: 18px;
+    text-decoration: none;
+    color:white;
+}
+
+form{
+    font-size:18px;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.664);
+    padding: 37px;
+    padding-right: 50px;
+    margin: 0px;
+    border: solid 1px transparent ;
+    border-left: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.rows{
+    display: flex;
+    gap: 60px;
+}
+
+legend{
+    margin-top: 7px;
+}
+
+select{
+    width: 177px;
+    height: 21px;
+}
+
+button{
+    margin-left:0px;
+}
+
+input{
+    height: 25px;
+    width: 200px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.submit{
+    font-size: 20px;
+    font-family:sans-serif;
+    border-radius: 4px;
+    padding-top: 0px;
+    color:white;
+    background-color: rgba(255, 0, 0, 0.705);
+    border-style: none;
+    padding: 0px 250px; 
+}
+
+.navigation :hover{
+    background-color: lightcoral;
+    transition: 0.5s;
+    color:white;
+    padding:3px 8px;
+}
+
+.active{
+    background-color: rgba(128, 0, 0,);
+    color:white;
+    padding:3px 8px;
+    box-shadow: 2px 2px 10px darkred;
+}
+
+.active2{
+    background-color: rgba(128, 0, 0,);
+    color:white;
+    padding:3px 30px;
+    box-shadow: 2px 2px 10px darkred;
+}
+
+.active3{
+    background-color: rgba(128, 0, 0,);
+    color:white;
+    padding:3px 11px;
+    box-shadow: 2px 2px 10px darkred;
+}
+
+.ewallet{
+    height: 28px; 
+    width: 204px; 
+    font-family: sans-serif; 
+    font-size: 17px; 
+    border: solid 1px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 1px;
+}
+
+.outlet{
+    height: 28px; 
+    width: 204px; 
+    font-family: sans-serif; 
+    font-size: 17px; 
+    border: solid 1px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 1px;
+}
+
+@media screen and (max-width: 476px) {
+    .fContainer{
+        background-image: url(netflix.jpg);
+        background-repeat: repeat-y;
+    }
+    .wrapper{
+        margin-top: 200px;
+        margin-left: 0px;
+        margin-bottom: 70px;
+        height: 665px;
+        width: 100px;
+    }
+    .active2{
+        padding:3px 0px;
+    }
+    form{
+        margin-top: 200px;
+        margin-bottom: 70px;
+        padding:10px;
+        width: 300px;
+        font-size: 14px;
+    }
+    .rows{
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .submit{
+        padding:0px 71px;
+    }
+    input{
+        width:230px;
+        font-size: 14px;
+    }
+    .ewallet{
+        width:175px;
+    }
+    .outlet{
+        width: 235px;
+    }
+}
+
+@media screen and (min-width: 477px) and (max-width:850px){
+    .fContainer{
+        background-image: url(netflix.jpg);
+        background-repeat: repeat-y;
+    }
+    .wrapper{
+        font-size: 20px;
+        margin-top: 200px;
+        margin-left: 120px;
+        margin-bottom: 200px;
+        height: 800px;
+        width: 150px;
+    }
+    .active2{
+        padding:3px 0px;
+    }
+    form{
+        margin-top: 200px;
+        margin-bottom: 200px;
+        padding:10px;
+        height: 780px;
+        width: 400px;
+        font-size: 18px;
+    }
+    .rows{
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .submit{
+        padding:0px 71px;
+    }
+    input{
+        width: 350px;
+        font-size: 16px;
+    }
+    .ewallet{
+        width: 355px;
+    }
+    .outlet{
+        width: 355px;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1300px){
+    .fContainer{
+        width:100%;
+        height:100vh;
+        background-image:url(netflix.jpg);
+        background-repeat: no-repeat;
+        background-size: 1500px ;
+        display: flex;
+        align-items: center;
+    }
+    
+    .wrapper{
+        width:150px;
+        height:419px;
+        border: solid 1px transparent;
+        background-color: rgba(255, 0, 0, 0.705);
+        font-size: 20px;
+        margin-left:200px;
+        border-radius: 5px;
+    }
+    
+    .wrapper li{
+        list-style-type: none;
+        font-family: sans-serif;
+        padding:10px 10px;
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+    }
+    
+    .wrapper a{
+        font-size: 18px;
+        text-decoration: none;
+        color:white;
+    }
+    
+    form{
+        font-size:18px;
+        font-family: sans-serif;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.664);
+        padding: 37px;
+        padding-right: 50px;
+        margin: 0px;
+        border: solid 1px transparent ;
+        border-left: none;
+        text-transform: capitalize;
+        border-radius: 5px;
+    }
+    
+    .rows{
+        display: flex;
+        gap: 60px;
+    }
+    
+    legend{
+        margin-top: 7px;
+    }
+    
+    select{
+        width: 177px;
+        height: 21px;
+    }
+    
+    button{
+        margin-left:0px;
+    }
+    
+    input{
+        height: 25px;
+        width: 200px;
+        border-radius: 4px;
+        font-family: sans-serif;
+        font-size: 17px;
+    }
+    
+    .submit{
+        font-size: 20px;
+        font-family:sans-serif;
+        border-radius: 4px;
+        padding-top: 0px;
+        color:white;
+        background-color: rgba(255, 0, 0, 0.705);
+        border-style: none;
+        padding: 0px 250px; 
+    }
+    
+    .navigation :hover{
+        background-color: lightcoral;
+        transition: 0.5s;
+        color:white;
+        padding:3px 8px;
+    }
+    
+    .active{
+        background-color: rgba(128, 0, 0,);
+        color:white;
+        padding:3px 8px;
+        box-shadow: 2px 2px 10px darkred;
+    }
+    
+    .active2{
+        background-color: rgba(128, 0, 0,);
+        color:white;
+        padding:3px 30px;
+        box-shadow: 2px 2px 10px darkred;
+    }
+    
+    .active3{
+        background-color: rgba(128, 0, 0,);
+        color:white;
+        padding:3px 11px;
+        box-shadow: 2px 2px 10px darkred;
+    }
+    
+    .ewallet{
+        height: 28px; 
+        width: 204px; 
+        font-family: sans-serif; 
+        font-size: 17px; 
+        border: solid 1px;
+        border-radius: 4px;
+        box-shadow: inset 1px 1px 1px;
+    }
+    
+    .outlet{
+        height: 28px; 
+        width: 204px; 
+        font-family: sans-serif; 
+        font-size: 17px; 
+        border: solid 1px;
+        border-radius: 4px;
+        box-shadow: inset 1px 1px 1px;
+    }
+}    

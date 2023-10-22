@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="fContainer">
+    <nav class="wrapper">
+        <ul class="navigation">
+            <li>Payment Method</li>
+            <hr style="margin: 0px 5px 0px 5px;">
+            <li><a href="payment.html" class="active">bank transfer</a></li>
+            <li><a href="e-wallet.html">e-wallet</a></li>
+            <li><a href="outlet.html">retail outlet</a></li>
+        </ul>
+    </nav>
+    <form>
+    <div class="rows">
+        <div class="cols">
+            <label for="name">name</label><br>
+            <input type="text" id="name" name="name">
+            <br> 
+            <label for="email">email</label><br>
+            <input type="email" id="email" name="email" placeholder=" example@gmail.com" required>
+            <br>
+            <label for="tel">phone number</label><br>
+            <input type="tel" id="tel" name="tel" placeholder=" ####-####-####" required>
+            <br>
+            <label for="address">address</label><br>
+            <input type="text" id="address" name="address" placeholder=" street, city, state" required>
+            <br>
+            <div class="option" required>
+                <label for="movie">Movie</label><br>
+                <input list="movies" name="movie">
+                <datalist id="movies">                                  
+                    <option value="Avengers">
+                    <option value="Avengers: Civil War">
+                    <option value="Avengers: End Game">
+                    <option value="Gran Turismo">
+                    <option value="Jujutsu Kaisen">
+                    <option value="Loki">
+                    <option value="Moon Knight">
+                    <option value="Spider Man">
+                    <option value="Spy X Family">
+                    <option value="The Nun 2">
+                </datalist>
+            </div>
+            <label for="quantity">number of ticket</label><br>
+            <input type="number" id="quantity" name="quantity" min="0"/>
+            <br><br>
+        </div>
+
+        <div class="cols">
+            <div class="cards">
+            <label for="cards">cards accepted</label><br>
+            <img src="BCA White.png" height="16px">
+            <img src="BRI White.png" height="16px">
+            <img src="BNI-white.png" height="14px">
+            <img src="Mandiri-White.png" height="16px">
+            <br>
+            </div>
+            <legend>
+            <label for="nameCard">name on card</label><br>
+            <input type="text" id="nameCard" name="nameCard" required>
+            <br>
+            <label for="creditNumber">credit card number</label><br>
+            <input type="number" id="creditNumber" name="creditNumber" placeholder=" #### #### #### ####" required>
+            <br>
+            <label for="monthYear">exp month & year</label><br>
+            <input type="month" id="monthYear" name="monthYear" required>
+            <br>
+            <label for="cvv">CVV</label><br>
+            <input type="number" id="cvv" name="cvv" placeholder=" ###" required>
+            <br>
+            <label for="purchase">Total Purchase</label><br>
+            <input type="text" id="purchase" name="purchase" value=" Rp. 59.999,00"><br><br>
+            </legend>
+        </div>  
+    </div>
+    <a href="success.html" style="text-decoration: none;"><input type="button" class="submit" value="Buy"></a>
+
+    </form>
+</div>
+</body>
+</html>
