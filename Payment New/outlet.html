@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="fContainer">
+    <nav class="wrapper">
+        <ul class="navigation">
+            <li class="payment">Payment Method</li>
+            <hr style="margin: 0px 5px 0px 5px;">
+            <li><a href="payment.html">bank transfer</a></li>
+            <li><a href="e-wallet.html">e-wallet</a></li>
+            <li><a href="outlet.html" class="active3">retail outlet</a></li>
+        </ul>
+    </nav>
+    <form>
+    <div class="rows">
+        <div class="cols">
+            <label for="name">name</label><br>
+            <input type="text" id="name" name="name" required>
+            <br> 
+            <label for="email">email</label><br>
+            <input type="email" id="email" name="email" placeholder=" example@gmail.com" required>
+            <br>
+            <label for="tel">phone number</label><br>
+            <input type="tel" id="tel" name="tel" placeholder=" ####-####-####" required>
+            <br>
+            <label for="address">address</label><br>
+            <input type="text" id="address" name="address" placeholder=" street, city, state" required>
+            <br>
+            <div class="option" required>
+                <label for="movie">Movie</label><br>
+                <input list="movies" name="movie">
+                <datalist id="movies">                                  
+                    <option value="Avengers">
+                    <option value="Avengers: Civil War">
+                    <option value="Avengers: End Game">
+                    <option value="Gran Turismo">
+                    <option value="Jujutsu Kaisen">
+                    <option value="Loki">
+                    <option value="Moon Knight">
+                    <option value="Spider Man">
+                    <option value="Spy X Family">
+                    <option value="The Nun 2">
+                </datalist>
+            </div>
+            <label for="quantity">number of ticket</label><br>
+            <input type="number" id="quantity" name="quantity" min="0"/>
+            <br>
+        </div>
+
+        <div class="cols">
+            <label for="cards">outlet</label><br>
+            <img src="alfamart.png" height="15px">
+            <img src="indomaret.png" height="15px">
+            <br>
+            <legend>
+            <label for="outlet">place of purchase</label><br>
+            <select class="outlet">
+                <option></option>
+                <option>Alfamart</option>
+                <option>Indomaret</option>
+
+            </select>
+            <br>
+            <label for="paymentCode">payment code</label><br>
+            <input type="number" id="paymentCode" name="paymentCode" placeholder=" ############" required>
+            <br>
+            <label for="deadline">payment deadline</label><br>
+            <input type="date" id="deadline" name="deadline" value="2024-06-01" required>
+            <br>
+            <label for="discount">discount voucher</label><br>
+            <input type="text" id="discount" name="discount" placeholder=" ######">
+            <br>
+            <label for="purchase">Total Purchase</label><br>
+            <input type="text" id="purchase" name="purchase" value=" Rp. 59.999,00">
+        <legend>
+
+        </div>  
+    </div><br>
+    <a href="success2.html" style="text-decoration: none;"><input type="button" class="submit" value="Buy"></a>
+    </form>
+</div>
+</body>
+</html>
